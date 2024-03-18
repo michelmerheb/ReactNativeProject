@@ -1,79 +1,39 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native App Project
 
-# Getting Started
+## Introduction
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+This project is a multi-screen application developed using React Native and TypeScript, using importnant concepts such as styling, navigation, state management, and parameter passing between screens.
 
-## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## App Structure
 
-To start Metro, run the following command from the _root_ of your React Native project:
+The app has many main screens:
+- **Home Screen**: The first thing you see. It's the main page.
+- **Details Screen**: When the user clicks on a chair, he goes to chair details. This happens for every chair on the home page.
+- **Settings Screen**: Lets you change the settings in the app.
 
-```bash
-# using npm
-npm start
+## Making the App Look Nice
 
-# OR using Yarn
-yarn start
-```
+I used StyleSheet API in React Native to make the app look nice. I tried to make the design responsive on all devices using Dimensions, but this was hard, and I need to learn more about it.
 
-## Step 2: Start your Application
+## Moving Around in the App
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+To go from one screen to another, I used React Navigation. I also learned how to send information from one screen to another.
 
-### For Android
+## Keeping Track of Information
 
-```bash
-# using npm
-npm run android
+I used hooks to manage information in the app, this means the app can remember what you do or choose. I also tried using the Context API to achieve a dark theme.
 
-# OR using Yarn
-yarn android
-```
+## Challenges
 
-### For iOS
+- **Design for All Phones**: Making the app responsive on many devices using Dimensions was hard. I tried my best to find solutions on the web, but didn't achieve the desired result. I need to master this in the future.
 
-```bash
-# using npm
-npm run ios
+## Future Plans
 
-# OR using Yarn
-yarn ios
-```
+- **Reusable Parts**: I want to make parts that I can use again to make my work easier.
+- **Better Design for All Phones**: I need to get better at making the app look good no matter the phone size.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Conclusion
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Making this app was not that hard, but I learned a lot. I'm excited to keep improving it and adding new things. 
+Thanks for reading about my project!
